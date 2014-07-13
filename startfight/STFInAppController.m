@@ -36,7 +36,7 @@
     if (self = [super init]) {
 
         //Step-1
-        /* _products = [[NSMutableArray alloc] initWithArray: @[
+        _products = [[NSMutableArray alloc] initWithArray: @[
                      @{@"id" : @"lightsaber",
                        @"image" : @"lightsaber",
                        @"name" : @"Lightsaber",
@@ -67,7 +67,6 @@
                        @"product" : [NSNull null]
                        }
                      ]];
-        */
 
         NSMutableSet* identifierSet = [[NSMutableSet alloc] initWithCapacity: _products.count];
 
