@@ -212,7 +212,7 @@
             default:
                 //Step-7
                 //Transaction in strange state, finish it!
-                //{..}
+                [[SKPaymentQueue defaultQueue] finishTransaction: transaction];
                 break;
         }
     }
@@ -221,7 +221,8 @@
 - (void) completeTransaction: (SKPaymentTransaction *)transaction {
 
     //Step-7
-    //{..}
+    // Remove the transaction from the payment queue.
+    [[SKPaymentQueue defaultQueue] finishTransaction: transaction];
 
     __weak __typeof(self)weakSelf = self;
     [self verifyReceipt: transaction
@@ -265,7 +266,8 @@
     /* The functionality of restore transaction is not included inthis demo*/
 
     //Step-7
-    //{..}
+    // Remove the transaction from the payment queue.
+    [[SKPaymentQueue defaultQueue] finishTransaction: transaction];
 
     //NSLog(@"  InApp.******   Purchase restored  ***********");
     [ self.delegate restoreComplete];
@@ -287,7 +289,7 @@
     }
 
     //Step-7
-    //{..}
+    [[SKPaymentQueue defaultQueue] finishTransaction: transaction];
 
 }
 
