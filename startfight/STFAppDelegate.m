@@ -21,8 +21,7 @@
     [self.window setRootViewController: rootVC];
     self.window.backgroundColor = [UIColor whiteColor];
 
-    //Step-5
-    //{..}
+    [[STFInAppController sharedInstance] registerAsTransactionObserver];
 
     [self.window makeKeyAndVisible];
 

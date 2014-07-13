@@ -89,14 +89,11 @@
 
 - (void) registerAsTransactionObserver {
 
-
+    //Step-5
     if (!_transactionQueue) {
         _transactionQueue = [[NSMutableArray alloc] init];
     }
-
-    //Step-5
-    //{...}
-
+    [[SKPaymentQueue defaultQueue] addTransactionObserver: self];
 }
 
 - (int) countProducts{
@@ -116,11 +113,10 @@
 
 - (void) buyProductForIndexPath: (NSIndexPath *)indexPath {
 
+    //Step-4
     NSDictionary *productDictionary = [self getProducDataForIndexPath: indexPath];
 
     if (productDictionary) {
-
-        //Step-4
         if (![SKPaymentQueue canMakePayments]) {
             [self.delegate storeError: @"In-App purchases are disabled on this device."
                                 title: @"In-App Purchases Disabled"];
@@ -182,8 +178,45 @@
 //Step-5
 #pragma mark SKPaymentTransactionObserver
 
-//{...}
+- (void)paymentQueue:(SKPaymentQueue *)queue updatedTransactions:(NSArray *)transactions{
 
+    for (SKPaymentTransaction* transaction in transactions) {
+        [_transactionQueue addObject:transaction];
+    }
+
+    [self processNextTransaction];
+
+}
+
+- (void)processNextTransaction
+{
+    while (_transactionQueue.count > 0)
+    {
+        SKPaymentTransaction* transaction = [_transactionQueue objectAtIndex:0];
+        [_transactionQueue removeObjectAtIndex:0];
+
+        switch (transaction.transactionState)
+        {
+            case SKPaymentTransactionStatePurchasing:
+                //Is working, do nothing
+                break;
+            case SKPaymentTransactionStatePurchased:
+                [self completeTransaction: transaction];
+                break;
+            case SKPaymentTransactionStateFailed:
+                [self failedTransaction: transaction];
+                break;
+            case SKPaymentTransactionStateRestored:
+                [self restoreTransaction: transaction];
+                break;
+            default:
+                //Step-7
+                //Transaction in strange state, finish it!
+                //{..}
+                break;
+        }
+    }
+}
 
 - (void) completeTransaction: (SKPaymentTransaction *)transaction {
 
