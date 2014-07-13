@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		248CFF3819730448001AE1E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248CFF3719730448001AE1E7 /* Foundation.framework */; };
+		248CFF3A19730448001AE1E7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248CFF3919730448001AE1E7 /* CoreGraphics.framework */; };
+		248CFF3C19730448001AE1E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248CFF3B19730448001AE1E7 /* UIKit.framework */; };
+		248CFF4219730448001AE1E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 248CFF4019730448001AE1E7 /* InfoPlist.strings */; };
+		248CFF4419730448001AE1E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 248CFF4319730448001AE1E7 /* main.m */; };
+		248CFF4819730448001AE1E7 /* STFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 248CFF4719730448001AE1E7 /* STFAppDelegate.m */; };
+		248CFF4E19730448001AE1E7 /* STFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 248CFF4D19730448001AE1E7 /* STFViewController.m */; };
+		248CFF5019730448001AE1E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 248CFF4F19730448001AE1E7 /* Images.xcassets */; };
+		248CFF5719730448001AE1E7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248CFF5619730448001AE1E7 /* XCTest.framework */; };
+		248CFF5819730448001AE1E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248CFF3719730448001AE1E7 /* Foundation.framework */; };
+		248CFF5919730448001AE1E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248CFF3B19730448001AE1E7 /* UIKit.framework */; };
+		248CFF6119730448001AE1E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 248CFF5F19730448001AE1E7 /* InfoPlist.strings */; };
+		248CFF6319730448001AE1E7 /* startfightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 248CFF6219730448001AE1E7 /* startfightTests.m */; };
+		248CFF7319730580001AE1E7 /* marketCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 248CFF6C19730580001AE1E7 /* marketCell.xib */; };
+		248CFF7419730580001AE1E7 /* STFInAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 248CFF6E19730580001AE1E7 /* STFInAppController.m */; };
+		248CFF7519730580001AE1E7 /* STFMarketVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 248CFF7019730580001AE1E7 /* STFMarketVC.m */; };
+		248CFF7619730580001AE1E7 /* STFMarketVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 248CFF7119730580001AE1E7 /* STFMarketVC.xib */; };
+		248CFF7719730580001AE1E7 /* STFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 248CFF7219730580001AE1E7 /* STFViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		248CFF5A19730448001AE1E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 248CFF2C19730448001AE1E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 248CFF3319730448001AE1E7;
+			remoteInfo = startfight;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		248CFF3419730448001AE1E7 /* starfight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = starfight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		248CFF3719730448001AE1E7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		248CFF3919730448001AE1E7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		248CFF3B19730448001AE1E7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		248CFF4119730448001AE1E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		248CFF4319730448001AE1E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		248CFF4619730448001AE1E7 /* STFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STFAppDelegate.h; sourceTree = "<group>"; };
+		248CFF4719730448001AE1E7 /* STFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STFAppDelegate.m; sourceTree = "<group>"; };
+		248CFF4C19730448001AE1E7 /* STFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STFViewController.h; sourceTree = "<group>"; };
+		248CFF4D19730448001AE1E7 /* STFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STFViewController.m; sourceTree = "<group>"; };
+		248CFF4F19730448001AE1E7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		248CFF5519730448001AE1E7 /* starfightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = starfightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		248CFF5619730448001AE1E7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		248CFF5E19730448001AE1E7 /* starfightTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "starfightTests-Info.plist"; sourceTree = "<group>"; };
+		248CFF6019730448001AE1E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		248CFF6219730448001AE1E7 /* startfightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = startfightTests.m; sourceTree = "<group>"; };
+		248CFF6C19730580001AE1E7 /* marketCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = marketCell.xib; sourceTree = "<group>"; };
+		248CFF6D19730580001AE1E7 /* STFInAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFInAppController.h; sourceTree = "<group>"; };
+		248CFF6E19730580001AE1E7 /* STFInAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFInAppController.m; sourceTree = "<group>"; };
+		248CFF6F19730580001AE1E7 /* STFMarketVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFMarketVC.h; sourceTree = "<group>"; };
+		248CFF7019730580001AE1E7 /* STFMarketVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFMarketVC.m; sourceTree = "<group>"; };
+		248CFF7119730580001AE1E7 /* STFMarketVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STFMarketVC.xib; sourceTree = "<group>"; };
+		248CFF7219730580001AE1E7 /* STFViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STFViewController.xib; sourceTree = "<group>"; };
+		248CFF7B197305BE001AE1E7 /* starfight-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "starfight-Prefix.pch"; sourceTree = "<group>"; };
+		248CFF7C197305E5001AE1E7 /* starfight-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "starfight-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		248CFF3119730448001AE1E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248CFF3A19730448001AE1E7 /* CoreGraphics.framework in Frameworks */,
+				248CFF3C19730448001AE1E7 /* UIKit.framework in Frameworks */,
+				248CFF3819730448001AE1E7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248CFF5219730448001AE1E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248CFF5719730448001AE1E7 /* XCTest.framework in Frameworks */,
+				248CFF5919730448001AE1E7 /* UIKit.framework in Frameworks */,
+				248CFF5819730448001AE1E7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		248CFF2B19730448001AE1E7 = {
+			isa = PBXGroup;
+			children = (
+				248CFF3D19730448001AE1E7 /* startfight */,
+				248CFF5C19730448001AE1E7 /* startfightTests */,
+				248CFF3619730448001AE1E7 /* Frameworks */,
+				248CFF3519730448001AE1E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		248CFF3519730448001AE1E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				248CFF3419730448001AE1E7 /* starfight.app */,
+				248CFF5519730448001AE1E7 /* starfightTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		248CFF3619730448001AE1E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				248CFF3719730448001AE1E7 /* Foundation.framework */,
+				248CFF3919730448001AE1E7 /* CoreGraphics.framework */,
+				248CFF3B19730448001AE1E7 /* UIKit.framework */,
+				248CFF5619730448001AE1E7 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		248CFF3D19730448001AE1E7 /* startfight */ = {
+			isa = PBXGroup;
+			children = (
+				248CFF4619730448001AE1E7 /* STFAppDelegate.h */,
+				248CFF4719730448001AE1E7 /* STFAppDelegate.m */,
+				248CFF7E19730769001AE1E7 /* Main View */,
+				248CFF7F19730778001AE1E7 /* Market */,
+				248CFF8019730782001AE1E7 /* Utils */,
+				248CFF4F19730448001AE1E7 /* Images.xcassets */,
+				248CFF3E19730448001AE1E7 /* Supporting Files */,
+			);
+			path = startfight;
+			sourceTree = "<group>";
+		};
+		248CFF3E19730448001AE1E7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				248CFF7C197305E5001AE1E7 /* starfight-Info.plist */,
+				248CFF7B197305BE001AE1E7 /* starfight-Prefix.pch */,
+				248CFF4019730448001AE1E7 /* InfoPlist.strings */,
+				248CFF4319730448001AE1E7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		248CFF5C19730448001AE1E7 /* startfightTests */ = {
+			isa = PBXGroup;
+			children = (
+				248CFF6219730448001AE1E7 /* startfightTests.m */,
+				248CFF5D19730448001AE1E7 /* Supporting Files */,
+			);
+			path = startfightTests;
+			sourceTree = "<group>";
+		};
+		248CFF5D19730448001AE1E7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				248CFF5E19730448001AE1E7 /* starfightTests-Info.plist */,
+				248CFF5F19730448001AE1E7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		248CFF7E19730769001AE1E7 /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				248CFF4C19730448001AE1E7 /* STFViewController.h */,
+				248CFF4D19730448001AE1E7 /* STFViewController.m */,
+				248CFF7219730580001AE1E7 /* STFViewController.xib */,
+			);
+			name = "Main View";
+			sourceTree = "<group>";
+		};
+		248CFF7F19730778001AE1E7 /* Market */ = {
+			isa = PBXGroup;
+			children = (
+				248CFF6F19730580001AE1E7 /* STFMarketVC.h */,
+				248CFF7019730580001AE1E7 /* STFMarketVC.m */,
+				248CFF7119730580001AE1E7 /* STFMarketVC.xib */,
+				248CFF6C19730580001AE1E7 /* marketCell.xib */,
+			);
+			name = Market;
+			sourceTree = "<group>";
+		};
+		248CFF8019730782001AE1E7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				248CFF6D19730580001AE1E7 /* STFInAppController.h */,
+				248CFF6E19730580001AE1E7 /* STFInAppController.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		248CFF3319730448001AE1E7 /* starfight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 248CFF6619730448001AE1E7 /* Build configuration list for PBXNativeTarget "starfight" */;
+			buildPhases = (
+				248CFF3019730448001AE1E7 /* Sources */,
+				248CFF3119730448001AE1E7 /* Frameworks */,
+				248CFF3219730448001AE1E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = starfight;
+			productName = startfight;
+			productReference = 248CFF3419730448001AE1E7 /* starfight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		248CFF5419730448001AE1E7 /* starfightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 248CFF6919730448001AE1E7 /* Build configuration list for PBXNativeTarget "starfightTests" */;
+			buildPhases = (
+				248CFF5119730448001AE1E7 /* Sources */,
+				248CFF5219730448001AE1E7 /* Frameworks */,
+				248CFF5319730448001AE1E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				248CFF5B19730448001AE1E7 /* PBXTargetDependency */,
+			);
+			name = starfightTests;
+			productName = startfightTests;
+			productReference = 248CFF5519730448001AE1E7 /* starfightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		248CFF2C19730448001AE1E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = STF;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = www.rafaelbartolome.es;
+				TargetAttributes = {
+					248CFF5419730448001AE1E7 = {
+						TestTargetID = 248CFF3319730448001AE1E7;
+					};
+				};
+			};
+			buildConfigurationList = 248CFF2F19730448001AE1E7 /* Build configuration list for PBXProject "starfight" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 248CFF2B19730448001AE1E7;
+			productRefGroup = 248CFF3519730448001AE1E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				248CFF3319730448001AE1E7 /* starfight */,
+				248CFF5419730448001AE1E7 /* starfightTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		248CFF3219730448001AE1E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248CFF5019730448001AE1E7 /* Images.xcassets in Resources */,
+				248CFF4219730448001AE1E7 /* InfoPlist.strings in Resources */,
+				248CFF7619730580001AE1E7 /* STFMarketVC.xib in Resources */,
+				248CFF7319730580001AE1E7 /* marketCell.xib in Resources */,
+				248CFF7719730580001AE1E7 /* STFViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248CFF5319730448001AE1E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248CFF6119730448001AE1E7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		248CFF3019730448001AE1E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248CFF7519730580001AE1E7 /* STFMarketVC.m in Sources */,
+				248CFF7419730580001AE1E7 /* STFInAppController.m in Sources */,
+				248CFF4819730448001AE1E7 /* STFAppDelegate.m in Sources */,
+				248CFF4419730448001AE1E7 /* main.m in Sources */,
+				248CFF4E19730448001AE1E7 /* STFViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		248CFF5119730448001AE1E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248CFF6319730448001AE1E7 /* startfightTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		248CFF5B19730448001AE1E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 248CFF3319730448001AE1E7 /* starfight */;
+			targetProxy = 248CFF5A19730448001AE1E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		248CFF4019730448001AE1E7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				248CFF4119730448001AE1E7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		248CFF5F19730448001AE1E7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				248CFF6019730448001AE1E7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		248CFF6419730448001AE1E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		248CFF6519730448001AE1E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		248CFF6719730448001AE1E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Rafael Bartolome (KV9XK2A3JP)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "startfight/starfight-Prefix.pch";
+				INFOPLIST_FILE = "startfight/starfight-Info.plist";
+				PRODUCT_NAME = starfight;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		248CFF6819730448001AE1E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Rafael Bartolome (KV9XK2A3JP)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "startfight/starfight-Prefix.pch";
+				INFOPLIST_FILE = "startfight/starfight-Info.plist";
+				PRODUCT_NAME = starfight;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		248CFF6A19730448001AE1E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/startfight.app/startfight";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "startfight/startfight-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "startfightTests/starfightTests-Info.plist";
+				PRODUCT_NAME = starfightTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		248CFF6B19730448001AE1E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/startfight.app/startfight";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "startfight/startfight-Prefix.pch";
+				INFOPLIST_FILE = "startfightTests/starfightTests-Info.plist";
+				PRODUCT_NAME = starfightTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		248CFF2F19730448001AE1E7 /* Build configuration list for PBXProject "starfight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				248CFF6419730448001AE1E7 /* Debug */,
+				248CFF6519730448001AE1E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		248CFF6619730448001AE1E7 /* Build configuration list for PBXNativeTarget "starfight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				248CFF6719730448001AE1E7 /* Debug */,
+				248CFF6819730448001AE1E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		248CFF6919730448001AE1E7 /* Build configuration list for PBXNativeTarget "starfightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				248CFF6A19730448001AE1E7 /* Debug */,
+				248CFF6B19730448001AE1E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 248CFF2C19730448001AE1E7 /* Project object */;
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="STFMarketVC">
+            <connections>
+                <outlet property="collectionView" destination="sVe-yQ-Jpl" id="C96-d2-yOT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marketbk" translatesAutoresizingMaskIntoConstraints="NO" id="A9I-aL-uuc">
+                    <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="sVe-yQ-Jpl">
+                    <rect key="frame" x="88" y="96" width="392" height="213"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="12" minimumInteritemSpacing="10" id="BXx-L3-nEl">
+                        <size key="itemSize" width="120" height="180"/>
+                        <size key="headerReferenceSize" width="5" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <cells/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="dMy-BI-rO3"/>
+                        <outlet property="delegate" destination="-1" id="c1X-1H-z19"/>
+                    </connections>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VT2-dl-VqM">
+                    <rect key="frame" x="383" y="10" width="97" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="97" id="MnU-Er-uUI"/>
+                        <constraint firstAttribute="height" constant="30" id="j17-Qf-F8Q"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <state key="normal" title="back">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="backPressed:" destination="-1" eventType="touchUpInside" id="2iN-da-xlK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dwm-Mr-yjb">
+                    <rect key="frame" x="321" y="58" width="159" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="159" id="6j0-Ob-Uac"/>
+                        <constraint firstAttribute="height" constant="30" id="rCU-yu-cra"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="restore purchases">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="restorePressed:" destination="-1" eventType="touchUpInside" id="Vtd-7A-EJ6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Dwm-Mr-yjb" firstAttribute="trailing" secondItem="VT2-dl-VqM" secondAttribute="trailing" id="8gT-Rr-fFX"/>
+                <constraint firstAttribute="centerX" secondItem="sVe-yQ-Jpl" secondAttribute="centerX" id="EwI-M3-Pfl"/>
+                <constraint firstAttribute="bottom" secondItem="sVe-yQ-Jpl" secondAttribute="bottom" constant="11" id="K3u-9W-Fjj"/>
+                <constraint firstItem="sVe-yQ-Jpl" firstAttribute="top" secondItem="Dwm-Mr-yjb" secondAttribute="bottom" constant="8" id="Q8z-uj-P2g"/>
+                <constraint firstItem="A9I-aL-uuc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Qad-mJ-hHZ"/>
+                <constraint firstItem="Dwm-Mr-yjb" firstAttribute="trailing" secondItem="sVe-yQ-Jpl" secondAttribute="trailing" id="VdC-kn-Pce"/>
+                <constraint firstAttribute="trailing" secondItem="Dwm-Mr-yjb" secondAttribute="trailing" constant="88" id="ZlK-bN-ySj"/>
+                <constraint firstAttribute="trailing" secondItem="A9I-aL-uuc" secondAttribute="trailing" id="es5-jI-kLn"/>
+                <constraint firstItem="Dwm-Mr-yjb" firstAttribute="top" secondItem="VT2-dl-VqM" secondAttribute="bottom" constant="18" id="gWS-xF-KwG"/>
+                <constraint firstAttribute="bottom" secondItem="A9I-aL-uuc" secondAttribute="bottom" id="jnz-v4-DWr"/>
+                <constraint firstItem="VT2-dl-VqM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="oQm-zo-2lM"/>
+                <constraint firstItem="A9I-aL-uuc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uw3-Jg-GKx"/>
+            </constraints>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="marketbk" width="1136" height="640"/>
+    </resources>
+</document>
