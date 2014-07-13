@@ -77,7 +77,11 @@
         }
 
         //Step-2
-        //{..}
+        SKProductsRequest *request = [[SKProductsRequest alloc]
+                                      initWithProductIdentifiers: identifierSet];
+        request.delegate = self;
+
+        [request start];
 
     }
     return self;
@@ -127,7 +131,43 @@
 }
 
 //Step-2
-//{..}
+#pragma mark SKProductsRequestDelegate
+
+- (void)productsRequest:(SKProductsRequest *)request
+     didReceiveResponse:(SKProductsResponse *)response {
+
+    for (NSString *invalidIdentifier in response.invalidProductIdentifiers) {
+        // Handle any invalid product identifiers.
+        NSLog(@"AppStore, invalid product id: %@", invalidIdentifier);
+    }
+
+    for (SKProduct *product in response.products) {
+
+        NSArray *productIDComponents = [product.productIdentifier componentsSeparatedByString:@"."];
+        NSString *productID = [productIDComponents lastObject];
+        for (NSDictionary *productDictionary in _products) {
+            if ([[productDictionary objectForKey:@"id"] isEqualToString: productID]) {
+                NSMutableDictionary *tempProduct = [[NSMutableDictionary alloc] initWithDictionary: productDictionary];
+
+                [_products removeObject: productDictionary];
+                [tempProduct setObject:product forKey: @"product"];
+
+                //Format product price
+                NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+                [numberFormatter setNumberStyle:NSNumberFormatterCurrencyStyle];
+                [numberFormatter setLocale:product.priceLocale];
+                NSString *formattedPriceString = [numberFormatter
+                                             stringFromNumber:product.price];
+                [tempProduct setObject: formattedPriceString forKey: @"price"];
+
+                NSLog(@"ProductID: %@ %@", productID, formattedPriceString);
+
+                [_products addObject: tempProduct];
+                break; //Avoid exce
+            }
+        }
+    }
+}
 
 //Step-5
 #pragma mark SKPaymentTransactionObserver
