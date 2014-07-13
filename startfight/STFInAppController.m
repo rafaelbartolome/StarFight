@@ -121,7 +121,17 @@
     if (productDictionary) {
 
         //Step-4
-        //{..}
+        if (![SKPaymentQueue canMakePayments]) {
+            [self.delegate storeError: @"In-App purchases are disabled on this device."
+                                title: @"In-App Purchases Disabled"];
+            return;
+        } else {
+
+            SKMutablePayment *payment = [SKMutablePayment paymentWithProduct: [productDictionary objectForKey:@"product"]];
+            payment.quantity = 1;
+            [[SKPaymentQueue defaultQueue] addPayment:payment];
+
+        }
 
     } else {
         //Inform delegate that there was an error

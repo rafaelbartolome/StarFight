@@ -112,6 +112,7 @@
 
     [self loadMask];
 
+    //Step-4
     [[STFInAppController sharedInstance] buyProductForIndexPath: indexPath];
 
 }
