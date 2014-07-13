@@ -87,13 +87,20 @@
 
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"marketCell" forIndexPath:indexPath];
 
+    //Step-3
+    NSDictionary *productData = [[STFInAppController sharedInstance] getProducDataForIndexPath: indexPath];
+
     UIImageView *imageView = (UIImageView*)[cell viewWithTag: 100];
     UILabel *name = (UILabel*)[cell viewWithTag: 200];
     UILabel *description = (UILabel*)[cell viewWithTag: 210];
     UILabel *price = (UILabel*)[cell viewWithTag: 300];
 
-    //Step-3
-    //{..}
+    if (productData) {
+        imageView.image = [UIImage imageNamed: [productData objectForKey: @"image"]];
+        name.text = [productData objectForKey: @"name"];
+        description.text = [productData objectForKey: @"description"];
+        price.text = [productData objectForKey:@"price"];
+    }
 
     return cell;
     
